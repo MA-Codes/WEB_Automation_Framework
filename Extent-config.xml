@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>dark</theme>
+    
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>https</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>DocIntact Automation Report</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName>   <![CDATA[
+            <img src='https://cognitiveinnovations.in/images/cognitive.png' />
+            <img src='https://staging.docintact.com/assets/images/logo.svg' />
+        ]]>Automation Report</reportName>
+        
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <testViewChartLocation>bottom</testViewChartLocation>
+		
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                    
+                });
+            ]]>
+        </scripts>
+        
+        <!-- custom styles -->
+		<styles>
+            <![CDATA[
+                .report-name { padding-left: 415px; } .report-name > img { float: left;height: 90%;margin-left: 30px;margin-top: 2px;width: auto; }
+                .brand-logo > img {display: none;width: 45%;margin-top: 10px;margin-left: 10px;} 
+                 nav {font-family: "Roboto";font-size: 22px}
+				.blue.darken-3 {font-size: 15px;font-weight: 100;background-color: #1565C0 !important;}
+            ]]>
+		</styles>
+    </configuration>
+</extentreports>
