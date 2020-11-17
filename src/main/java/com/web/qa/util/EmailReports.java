@@ -141,7 +141,7 @@ public class EmailReports {
         String mailTo = "tummu.srisri@cognitiveinnovations.in";
         String[] cc_mails= {"paramesh.dadi@cognitiveinnovations.in","manojkumar.medapati@cognitiveinnovations.in","dinesh.varanasi@cognitiveinnovations.in","varalakshmi.kotyada@cognitiveinnovations.in"};
         String subject = "Automation Report";
-        String message = "Test Reports of DocIntact <br><br> This Test is Triggered by "+user+"..<br><br>For detailed report, Please contact QA Team.<br><br> Regards, <br>QA Team";
+        String message = "Test Reports of Automation Framework <br><br> This Test is Triggered by "+user+"..<br><br>For detailed report, Please contact QA Team.<br><br> Regards, <br>QA Team";
 
         
         //attachments

@@ -6,7 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.cucumber.listener.Reporter;
-import com.web.qa.util.EmailReports;
+//import com.web.qa.util.EmailReports;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
@@ -16,7 +16,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
         		features = "src/main/java/Features/1_LandingPage.feature",
         		glue = {"stepDefinitions"},
-                tags = {"~@login"},
+//                tags = {"~@login"},
                 format = {
                         "pretty",
                         "html:target/cucumber-reports/cucumber-pretty",
@@ -46,6 +46,6 @@ public class TestRunner {
     public void tearDownClass() throws Exception {
     	Reporter.loadXMLConfig("Extent-config.xml");
         testNGCucumberRunner.finish();
-        EmailReports.Email_Report();
+//        EmailReports.Email_Report();
     }
 }

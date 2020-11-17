@@ -14,13 +14,15 @@
         <protocol>https</protocol>
         
         <!-- title of the document -->
-        <documentTitle>DocIntact Automation Report</documentTitle>
+        <documentTitle>Automation Report</documentTitle>
         
-        <!-- report name - displayed at top-nav -->
-        <reportName>   <![CDATA[
-            <img src='https://cognitiveinnovations.in/images/cognitive.png' />
+        <!-- report name - displayed at top-nav 
+        To Add company logo <![CDATA[
             <img src='https://staging.docintact.com/assets/images/logo.svg' />
-        ]]>Automation Report</reportName>
+        ]]>
+        -->
+        
+        <reportName>Automation Report</reportName>
         
         <!-- location of charts in the test view -->
         <!-- top, bottom -->

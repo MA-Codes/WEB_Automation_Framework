@@ -37,7 +37,7 @@ public class TestBase {
 		public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/doc"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/web"
 					+ "/qa/config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
@@ -61,7 +61,7 @@ public class TestBase {
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("profile.default_content_setting_values.notifications", 1);
 			prefs.put("profile.default_content_settings.popups", 0);
-			prefs.put("download.default_directory", System.getProperty("user.dir")+"\\DocIntact_Downloads");
+			prefs.put("download.default_directory", System.getProperty("user.dir")+"\\Downloads");
 			prefs.put("safebrowsing.enabled", "true");
 //			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--start-maximized");
