@@ -119,7 +119,7 @@ public class TestBase {
 	public void closeBrowser() throws IOException
 	{
 		
-		driver.close();
+		driver.quit();
 	}
 	
 	

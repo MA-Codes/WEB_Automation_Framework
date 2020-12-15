@@ -3,6 +3,7 @@ package com.web.qa.pages;
 
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -23,6 +24,9 @@ public class LandingPage extends TestBase {
 // Validating all available links in landing page
 	
 	public void link_validation() throws InterruptedException {
+//		Alert alert=driver.switchTo().alert();
+//		alert.dismiss();
+//		driver.findElement(By.xpath("//button[contains(text(),'✕']")).click();
 	 List<WebElement> atag=driver.findElements(By.tagName("a"));
 	 System.out.println(atag.size());
 	 String hashurl=prop.getProperty("url")+"#";
