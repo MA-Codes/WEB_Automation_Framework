@@ -1,0 +1,31 @@
+Start of Program
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+Trying to find Element By : By.tagName: a
+Found Element By : By.tagName: a
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> tag name: a]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> tag name: a]
+Trying to find Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']
+Found Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']
+Trying to find Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']
+Found Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> xpath: //div[@class='nav-sprite hmenu-close-icon']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> xpath: //div[@class='nav-sprite hmenu-close-icon']]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> tag name: a]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> tag name: a]
+Trying to find Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']Start of Program
+Before navigating to: 'https://www.amazon.in/'
+Navigated to:'https://www.amazon.in/'
+Trying to find Element By : By.tagName: a
+Found Element By : By.tagName: a
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> tag name: a]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> tag name: a]
+Trying to find Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']
+Found Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']
+Trying to find Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']
+Found Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> xpath: //div[@class='nav-sprite hmenu-close-icon']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> xpath: //div[@class='nav-sprite hmenu-close-icon']]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> tag name: a]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (5ab908f2ad9a70a50ed6d37224fe14a1)] -> tag name: a]
+Trying to find Element By : By.xpath: //div[@class='nav-sprite hmenu-close-icon']

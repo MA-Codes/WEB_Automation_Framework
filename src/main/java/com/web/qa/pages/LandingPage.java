@@ -39,6 +39,10 @@ public class LandingPage extends TestBase {
 			 {
 		 atag.get(i).click();
 		 Thread.sleep(200);
+		 if(driver.findElement(By.xpath("//div[@class='nav-sprite hmenu-close-icon']")).isDisplayed())
+		 {
+			 driver.findElement(By.xpath("//div[@class='nav-sprite hmenu-close-icon']")).click();
+		 }
 			 }
 		 }
 		 else
