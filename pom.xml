@@ -65,7 +65,7 @@
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
-			<version>1.9.5</version>
+			<version>1.9.6</version>
 		</dependency>
 	  <dependency>
 	    <groupId>javax.mail</groupId>
@@ -167,7 +167,7 @@
                                 <param>**/*.json</param>
                             </jsonFiles>
                             <!-- optional, defaults to outputDirectory if not specified -->
-                            <parallelTesting>false</parallelTesting>
+                            <parallelTesting>true</parallelTesting>
                             <!-- optional, set true to group features by its Ids -->
                             <mergeFeaturesById>false</mergeFeaturesById>
                             <!-- optional, set true to get a final report with latest results of the same test from different test runs -->
