@@ -67,7 +67,7 @@ public class LoginPage extends TestBase{
 		username.sendKeys(id);
 		passwd.sendKeys(password);
 		Select languageselect=new Select(languag);
-		languageselect.selectByValue(language);
+		languageselect.selectByVisibleText(language);
 		login.click();
 	}
 	

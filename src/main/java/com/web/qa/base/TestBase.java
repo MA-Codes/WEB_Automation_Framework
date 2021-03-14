@@ -52,8 +52,16 @@ public class TestBase {
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")){
+		if(browserName.equals("chrome"))
+		{
+			if(System.getProperty("System.getProperty(\"os.name\")").contains("windows"))
+			{
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
+			}
+			else
+			{
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\linux\\chromedriver.exe");
+			}
 			//To handle location popup 
 			DesiredCapabilities caps = new DesiredCapabilities();
 			ChromeOptions options = new ChromeOptions();			
