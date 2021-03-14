@@ -51,10 +51,11 @@ public class TestBase {
 	
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
+		String os=System.getProperty("os.name");
 		
 		if(browserName.equals("chrome"))
 		{
-			if(System.getProperty("System.getProperty(\"os.name\")").contains("windows"))
+			if(os.contains("Windows"))
 			{
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver.exe");
 			}
