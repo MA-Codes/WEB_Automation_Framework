@@ -13,7 +13,7 @@
 	</properties>
 	
 	<dependencies>
-	
+		
 		<dependency>
 		  <groupId>com.paulhammant</groupId>
 		  <artifactId>ngwebdriver</artifactId>
@@ -76,6 +76,12 @@
     <groupId>javax.mail</groupId>
     <artifactId>javax.mail-api</artifactId>
     <version>1.6.2</version>
+</dependency>
+
+<dependency>
+  <groupId>org.apache.poi</groupId>
+  <artifactId>poi</artifactId>
+  <version>4.1.2</version>
 </dependency>
 										
 <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
@@ -213,8 +219,8 @@
 					</execution>
 				</executions>
 				<configuration>
-				<customPageTitle>FrameWork Report</customPageTitle>
-					<projectName>Framework</projectName>
+				<customPageTitle>Automation FrameWork Report</customPageTitle>
+					<projectName>OpenEMR Automation</projectName>
 					<sourceJsonReportDirectory>target/cucumber-reports/CucumberTestReport.json</sourceJsonReportDirectory>
 					<generatedHtmlReportDirectory>${project.build.directory}/generated-report</generatedHtmlReportDirectory>
 					<expandStepHooks>true</expandStepHooks>

@@ -7,22 +7,39 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import com.web.qa.pages.LoginPage;
 import com.web.qa.base.TestBase;
 import com.web.qa.pages.LandingPage;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class LoginStepDefinition extends TestBase {
 
 	WebDriver driver;
+	LoginPage loginPage;
 
 
 	public LoginStepDefinition() {
 		super();
 	}
+	
+	@Given("^user_enter \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enter_and(String id, String password, String language) throws Exception {
+		loginPage = new LoginPage();
+		LoginPage.signin(id, password, language);
+	}
+	
+	@Then("^login from excel$")
+	public void login_from_excel() throws Throwable {
+		loginPage = new LoginPage();
+		String path = null;
+		LoginPage.signin_excel(path);
+	}
+
 
 	@Then("^Validation Header links in home page$")
 	public void validation_links() throws InterruptedException, AWTException {

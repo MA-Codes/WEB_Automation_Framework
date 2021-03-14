@@ -58,15 +58,15 @@ public class TestBase {
 			DesiredCapabilities caps = new DesiredCapabilities();
 			ChromeOptions options = new ChromeOptions();			
 			caps.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.ACCEPT);
-			Map<String, Object> prefs = new HashMap<String, Object>();
-			prefs.put("profile.default_content_setting_values.notifications", 1);
-			prefs.put("profile.default_content_settings.popups", 0);
-			prefs.put("download.default_directory", System.getProperty("user.dir")+"\\Downloads");
-			prefs.put("safebrowsing.enabled", "true");
+//			Map<String, Object> prefs = new HashMap<String, Object>();
+//			prefs.put("profile.default_content_setting_values.notifications", 1);
+//			prefs.put("profile.default_content_settings.popups", 0);
+//			prefs.put("download.default_directory", System.getProperty("user.dir")+"\\Chrome_Downloads");
+//			prefs.put("safebrowsing.enabled", "true");
 //			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--start-maximized");
-//			options.addArguments("--headless");
-			options.setExperimentalOption("prefs", prefs);
+			options.addArguments("--headless");
+//			options.setExperimentalOption("prefs", prefs);
 			caps.setCapability(ChromeOptions.CAPABILITY, options);
 			driver = new ChromeDriver(options);
 			
@@ -80,33 +80,28 @@ public class TestBase {
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
-//		driver.manage().window().maximize();
-		JavascriptExecutor jsDriver=(JavascriptExecutor) driver;
-		NgWebDriver ngWebDriver = new NgWebDriver(jsDriver);
-		ngWebDriver.waitForAngularRequestsToFinish();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));	
-		ngWebDriver.waitForAngularRequestsToFinish();
 	}
+	
+//To Capture Eclipse Console Logs to text file and attach in mail	
 	public static BufferedWriter bwcc;
 	public static void ConsoleLogs(String met_name) throws IOException {
         System.out.println("================== Console LOGS =======================");
         String logpath=System.getProperty("user.dir")+"\\logs\\"+"\\Consolelogs_"+met_name+".txt";
          bwcc = new BufferedWriter(new FileWriter(logpath,true));
         bwcc.write(WebEventListener.toText);
-        bwcc.write(WebEventListener.toText);
 		System.out.println("======================================================");
 		bwcc.close();
         
     }
 	
-	
+// To Capture Browser Console Logs to a text file and attach in mail	
 	public static void logBrowserConsoleLogs(String met_name) throws IOException {
         System.out.println("================== BROWSER LOGS =======================");
         String logpath=System.getProperty("user.dir")+"\\logs\\"+met_name+".txt";
-//        FileWriter fileWritter = new FileWriter(f1.getName(),true);
         BufferedWriter bw = new BufferedWriter(new FileWriter(logpath,true));
         LogEntries logEntries = driver.manage().logs().get(LogType.BROWSER);
         for (LogEntry entry : logEntries) {
@@ -116,6 +111,8 @@ public class TestBase {
         bw.close();
         System.out.println("=======================================================");
     }
+	
+	
 	public void closeBrowser() throws IOException
 	{
 		

@@ -31,11 +31,13 @@ public class TestRunner {
     public void setUpClass() throws Exception {
         testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
     }
+    
 
     @Test(groups = "cucumber", description = "Runs Cucumber Feature", dataProvider = "features")
     public void feature(CucumberFeatureWrapper cucumberFeature) {
         testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
     }
+    
 
     @DataProvider
     public Object[][] features() {
@@ -47,5 +49,6 @@ public class TestRunner {
     	Reporter.loadXMLConfig("Extent-config.xml");
         testNGCucumberRunner.finish();
 //        EmailReports.Email_Report();
+        
     }
 }

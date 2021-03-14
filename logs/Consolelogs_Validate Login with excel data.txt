@@ -1,0 +1,15 @@
+Start of Program
+Before navigating to: 'https://demo.openemr.io/openemr/interface/login/login.php?site=default'
+Navigated to:'https://demo.openemr.io/openemr/interface/login/login.php?site=default'
+Trying to find Element By : By.xpath: //input[@id='authUser']
+Found Element By : By.xpath: //input[@id='authUser']
+Trying to find Element By : By.xpath: //input[@id='clearPass']
+Found Element By : By.xpath: //input[@id='clearPass']
+Trying to find Element By : By.xpath: //select[@name='languageChoice']
+Found Element By : By.xpath: //select[@name='languageChoice']
+Trying to find Element By : By.xpath: //select[@name='languageChoice']
+Found Element By : By.xpath: //select[@name='languageChoice']
+Trying to find Element By : By.xpath: //select[@name='languageChoice']
+Found Element By : By.xpath: //select[@name='languageChoice']
+Trying to find Element By : By.xpath: .//option[@value = "English (Indian)"]
+Found Element By : By.xpath: .//option[@value = "English (Indian)"]
