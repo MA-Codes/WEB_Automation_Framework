@@ -61,7 +61,7 @@ public class TestBase {
 			}
 			else
 			{
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\linux\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/linux/chromedriver");
 			}
 			//To handle location popup 
 			DesiredCapabilities caps = new DesiredCapabilities();
